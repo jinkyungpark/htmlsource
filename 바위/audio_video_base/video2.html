@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link href="https://vjs.zencdn.net/7.5.5/video-js.css" rel="stylesheet" />
+    <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
+    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- videojs를 통해서 각 브라우저 마다 통일된 video 화면 지원 -->
+
+    <video
+      id="my-video"
+      class="video-js"
+      controls
+      preload="auto"
+      width="640"
+      height="264"
+      poster="MY_VIDEO_POSTER.jpg"
+      data-setup="{}"
+    >
+      <!--페이지를 열자 마자 play 되지만 소리 안나게-->
+      <source src="video/vivaldi.mp4" type="video/mp4" />
+      <!--mp4를 지원하지 않는 브라우저를 위해-->
+      <p>이 브라우저는 video 요소를 지원하지 않습니다.</p>
+    </video>
+    <script src="https://vjs.zencdn.net/7.5.5/video.js"></script>
+  </body>
+</html>

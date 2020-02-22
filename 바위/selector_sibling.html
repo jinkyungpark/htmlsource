@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* h1 뒤의 h2 첫번째만 선택하고 싶다면*/
+      /* div h1 + h2 {
+        color: red;
+      } */
+      /* h1 뒤의 h2 둘다 선택하고 싶다면*/
+      div h1 ~ h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">css 기본 문법</h1>
+      <h2>형제 선택자</h2>
+      <h2>형제 선택자</h2>
+      <nav>
+        <h2>제목</h2>
+      </nav>
+    </div>
+  </body>
+</html>

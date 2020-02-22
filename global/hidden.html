@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- hidden : 요소의 숨김    -->
+    <form id="hidden-form" action="/form-action" hidden>
+      <!-- 숨겨진 양식들.. -->
+      <input type="text" name="name" value="hong" />
+    </form>
+    <!-- button form : 안에 이름을 맞추면 form 안에 버튼이 있는 것과 같은 효과-->
+    <button form="hidden-form" type="submit">전송</button>
+  </body>
+</html>

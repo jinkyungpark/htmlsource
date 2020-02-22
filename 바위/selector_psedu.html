@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      a:link {
+        text-decoration: none;
+        color: navy;
+        outline: none;
+      }
+      a:hover {
+        color: orange;
+      }
+      a:active {
+        background-color: red;
+        color: white;
+      }
+      a:visited {
+        color: silver;
+      }
+      a:focus {
+        background-color: palegreen;
+      }
+      h1:hover {
+        /*h1 태그에 마우스를 올리면*/
+        text-decoration: underline;
+      }
+      input:focus {
+        /*input 안에 포커스가 들어오면*/
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="title">css 기본 문법</h1>
+    <h2>속성 선택자</h2>
+    <ul>
+      <li class="google"><a href="#" target="_blank">google</a></li>
+      <li class="link1"><a href="#" target="_blank">daum</a></li>
+      <li class="link2"><a href="#" target="_self">naver</a></li>
+    </ul>
+    <a href="mailto:master@daewoo.com">master@daewoo.com</a>
+    <input type="text" placeholder="이름 입력" />
+  </body>
+</html>

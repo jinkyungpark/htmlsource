@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      /* li 태그에 css_selector_class.html 과 같은 결과를 내고 싶다면?*/
+      #color {
+        color: blue;
+      }
+      /* li 중 두번째와 세번째에는 밑줄을 긋고 싶은 경우*/
+      #line {
+        color: blue;
+        text-decoration: underline;
+      }
+      /*세번째 항목에는 추가로 굵게 하고 싶은 경우*/
+      #lineweight {
+        color: blue;
+        text-decoration: underline;
+        font-weight: bold;
+      }
+      #title {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1 id="title">css 기본 문법</h1>
+      <h2>아이디 선택자</h2>
+    </div>
+    <ul>
+      <!-- id 값은 현재 페이지에서 유일해야 하므로 아래처럼 줄 수 없음
+        <li id="color">List item</li>
+        <li id="color line">List item</li>
+        <li id="color line weight">List item</li>      
+      -->
+      <li id="color">List item</li>
+      <li id="line">List item</li>
+      <li id="lineweight">List item</li>
+    </ul>
+  </body>
+</html>
